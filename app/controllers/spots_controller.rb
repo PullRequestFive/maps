@@ -4,8 +4,8 @@ class SpotsController < ApplicationController
 
   def create
     @spot = Spot.new(post_params)
-
     @spot.save
+
     redirect_to @spot
   end
 
