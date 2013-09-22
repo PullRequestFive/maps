@@ -1,4 +1,11 @@
 class SpotsController < ApplicationController
+  def index
+    respond_to do |format|
+      format.html
+      format.json { render :json => Spot.all }
+    end
+  end
+
   def new
   end
 
@@ -15,6 +22,6 @@ class SpotsController < ApplicationController
 
   private
   def post_params
-    params.require(:spot).permit(:title, :text)
+    params.require(:spot).permit(:title, :text, :long, :lat)
   end
 end

@@ -1,5 +1,11 @@
 <%= form_for :spot, url: spots_path  do |f| %>
   <p>
+  <%= f.label :location %><br>
+  <%= f.text_field :lat %>
+  <%= f.text_field :long %>
+  </p>
+
+  <p>
   <%= f.label :title %><br>
   <%= f.text_field :title %>
   </p>
