@@ -1,8 +1,14 @@
+<form id="geocoding_form">
+  <div id="map"></div>
+  <input type="text" id="address">Location</input>
+  <input type="submit"></input>
+</form>
+
 <%= form_for :spot, url: spots_path  do |f| %>
+
   <p>
-  <%= f.label :location %><br>
-  <%= f.text_field :lat %>
-  <%= f.text_field :long %>
+  <%= f.hidden_field :lat %>
+  <%= f.hidden_field :long %>
   </p>
 
   <p>
