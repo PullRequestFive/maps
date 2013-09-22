@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require spots
+//= require welcome
 //= require_tree .
